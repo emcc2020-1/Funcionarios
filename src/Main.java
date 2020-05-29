@@ -10,7 +10,8 @@ public class Main {
 		
 		String nome;
 		char  opcao = 0;
-		double hT , vH ;
+		double hT , vH , somaHt = 0 , custoTotal = 0 ;
+		int opcaoMenu ;
 		
 		do {
 		System.out.printf("Digite o nome do Funcionário : ");
@@ -41,9 +42,49 @@ public class Main {
 		System.out.println();
 		sc.nextLine();		
 		
-		}while(opcao == 'S');
+		}while(opcao == 'S' || opcao == 's');
 		
+		System.out.println("");
+		System.out.println("MENU:");
+		System.out.println("1 - Total de horas trabalhadas ");
+		System.out.println("2 - Custo total");
+		System.out.println("3 - Nome da pessoa que ganhou mais ");
+		System.out.println("4 - Sair  ");
+		System.out.println("Digite uma opção:  ");
+		opcaoMenu=sc.nextInt();
 		
+		while (opcaoMenu !=4) {
+			
+			
+
+			if (opcaoMenu ==1) {
+				
+				System.out.printf("Total de horas = %.1f%n", somaHt);
+				
+			}
+			else if(opcaoMenu ==2) { 
+				
+				System.out.printf("Custo total = R$ %.1f%n",custoTotal);
+			} 
+			else if(opcaoMenu == 3){
+				System.out.println("Pessoa que ganhou mais: "  );
+			}
+			else {
+				System.out.println("FIM DO PROGRAMA! " );
+			}
+			
+			System.out.println("");
+			System.out.println("MENU:");
+			System.out.println("1 - Total de horas trabalhadas ");
+			System.out.println("2 - Custo total");
+			System.out.println("3 - Nome da pessoa que ganhou mais");
+			System.out.println("4 - Sair  ");
+			System.out.println("Digite uma opção:  ");
+			opcaoMenu=sc.nextInt();
+		}
+		
+			
+			
 		
 		
 		sc.close();
