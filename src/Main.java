@@ -53,6 +53,10 @@ public class Main {
 		System.out.println("Digite uma opção:  ");
 		opcaoMenu=sc.nextInt();
 		
+		
+		
+		
+		
 		while (opcaoMenu !=4) {
 			
 			
@@ -69,9 +73,7 @@ public class Main {
 			else if(opcaoMenu == 3){
 				System.out.println("Pessoa que ganhou mais: "  );
 			}
-			else {
-				System.out.println("FIM DO PROGRAMA! " );
-			}
+			
 			
 			System.out.println("");
 			System.out.println("MENU:");
@@ -83,7 +85,9 @@ public class Main {
 			opcaoMenu=sc.nextInt();
 		}
 		
-			
+		if(opcaoMenu == 4) {
+			System.out.println("FIM DO PROGRAMA! " );
+		}	
 			
 		
 		
